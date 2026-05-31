@@ -43,6 +43,8 @@ This project aims to predict the average delay of trains at arrival using histor
 
 ## 3. Usage
 
+> **Note on data:** the SNCF dataset (`dataset.csv` / `cleaned_dataset.csv`) is **not included** in this repository. Provide your own CSV with the columns listed below (the original data comes from SNCF Open Data on monthly train regularity).
+
 ### A. Data Cleaning & Exploration
 - Open and run `tardis_eda.ipynb` in Jupyter or VS Code to clean and explore the raw dataset (`dataset.csv`).
 - The notebook will output a cleaned file: `cleaned_dataset.csv`.
@@ -65,7 +67,7 @@ This project aims to predict the average delay of trains at arrival using histor
 
 Tip:
 
-For best results, use the provided <code>cleaned_dataset.csv</code> as a template for your own data.
+Your CSV must contain the columns: <code>Departure station</code>, <code>Arrival station</code>, <code>Date</code>, <code>Average delay of all trains at arrival</code>.
 
 All code is modularized in the <code>dashboard_utils/</code> folder for easy extension and maintenance.
 
